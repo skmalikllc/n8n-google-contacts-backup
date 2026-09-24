@@ -1,4 +1,8 @@
+<img src="https://raw.githubusercontent.com/skmalikllc/automation-portfolio/main/assets/cover-n8n-contacts-backup.png" alt="cover" width="100%">
+
 # n8n Google Contacts Backup — client case study
+
+`SANITIZED CLIENT CASE STUDY`
 
 **Project type:** Sanitized client case study
 **Evidence source:** completed Upwork contract, client-rated 5.0
@@ -19,6 +23,17 @@ wanted the list captured on a schedule so that a bad day is recoverable.
 
 A workflow in n8n that reads the Google Contacts account and writes a backup copy
 on a recurring schedule, without the owner having to remember to do it.
+
+## Architecture
+
+The shape of the workflow — not its internals, which belong to the client:
+
+```mermaid
+flowchart LR
+  A[Schedule trigger] --> B[Read Google Contacts]
+  B --> C[Capture snapshot]
+  C --> D[Stored backup copy]
+```
 
 ## Tools
 
