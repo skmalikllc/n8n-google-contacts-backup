@@ -30,9 +30,9 @@ The shape of the workflow — not its internals, which belong to the client:
 
 ```mermaid
 flowchart LR
-  A[Schedule trigger] --> B[Read Google Contacts]
-  B --> C[Capture snapshot]
-  C --> D[Stored backup copy]
+  A["Schedule trigger"] --> B["Read Google Contacts"]
+  B --> C["Capture snapshot"]
+  C --> D["Stored backup copy"]
 ```
 
 ## Tools
